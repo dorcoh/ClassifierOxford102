@@ -76,3 +76,4 @@ AlexNet uses a crop size of 227 x 227, while VGG_S uses 224 x 224, so it's not a
 - These were run using the mean image for [ILSVRC 2012](http://www.image-net.org/challenges/LSVRC/2012/) instead of the mean for the actual Oxford dataset. This was more out of laziness that anything else.
 
 - [This paper](http://arxiv.org/abs/1403.6382) reports 87% top-1 accuracy on the Oxford-102 dataset using an SVM on features from the [OverFeat model](http://cilvr.nyu.edu/doku.php?id=code:start). I couldn't tell which split they used for training.
+## oxford 102

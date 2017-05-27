@@ -1,0 +1,1 @@
+nohup ../../caffe/build//tools/caffe train -solver solver.prototxt -weights pretrained-weights.caffemodel -gpu 0 > out 2> err < /dev/null &

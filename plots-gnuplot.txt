@@ -1,0 +1,15 @@
+# parse
+../../caffe/tools/extra/parse_log.sh <filename>
+
+gnuplot
+reset
+set terminal png
+set output "imagename.png"
+set style data lines
+set key right
+
+set title "Our-title"
+set xlabel "xlabel"
+set ylabel "ylabel"
+
+plot "file.test" using 1:3 title "some-title"
