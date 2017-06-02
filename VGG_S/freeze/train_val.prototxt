@@ -280,8 +280,8 @@ layers {
   type: INNER_PRODUCT
   bottom: "fc7"
   top: "fc8_oxford102"
-  blobs_lr: 00
-  blobs_lr: 00
+  blobs_lr: 10
+  blobs_lr: 20
   weight_decay: 0
   weight_decay: 0
   inner_product_param {
