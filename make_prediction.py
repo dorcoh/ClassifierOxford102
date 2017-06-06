@@ -57,8 +57,7 @@ transformer.set_transpose('data', (2,0,1))
 Making predicitions
 '''
 ##Reading image paths
-test_img_paths = [img_path for img_path in glob.glob("/input/*jpg")]
-
+test_img_paths = [img_path for img_path in glob.glob("/home/stavsofe@st.technion.ac.il/caffe-oxford102/input/*.jpg")]
 test_ids = []
 preds = []
 
@@ -75,6 +74,13 @@ for img_path in test_img_paths:
     preds = preds + [pred_probas.argmax()]
 
     print img_path
-    print pred_probas.argmax()
+    classes =  len(pred_probas[0])
+    probsDict = {i:0 for i in range(1,classes+1)}
+    for key in probsDict:
+        probsDict[key] = pred_probas[0][key-1]
+    sort = sorted(probsDict.items(), key=lambda x: x[1], reverse=True)
+    for i in range(5):
+        print sort[i]
+    print pred_probas.argmax()+1
     print '-------'
 
