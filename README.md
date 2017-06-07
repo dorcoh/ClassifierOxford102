@@ -1,6 +1,6 @@
 # Oxford 102 flowers
 
-repository cloned from https://github.com/jimgoo/caffe-oxford102 , we tried to re-produce his results.
+Repository cloned from https://github.com/jimgoo/caffe-oxford102 , we tried to re-produce his results.
 
 Apparently caffe implementation has changed since then and we couldn't reproduce the AlexNet results (70% on SGD optimizer vs. 93% by jimgoo)
 
