@@ -11,5 +11,5 @@ In this work, we learned the power of using transfer learning, which can easily 
 ## Results summary:
 
 | | VGG-S | VGG-S pre-trained | AlexNet pre-trained | VGG-S pretrained 2 norm |
-| | :---- | :---------------- | :------------------ | :---------------------- |
+| | :---: | :---: | :---: | :---: |
 | Top accuracy | 7.7% | 94.8% | 71.5% | 95.8% | 
