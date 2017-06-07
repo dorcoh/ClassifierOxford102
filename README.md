@@ -6,7 +6,7 @@ Apparently caffe implementation has changed since then and we couldn't reproduce
 
 We succeeded in getting the same results for VGG_S, and also improved our trial by 1% to 95.8% by adding one more normalization layer.
 
-In this work, we learned the power of using transfer learning (here specifically on ImageNet), which can easily benefit the performance of training networks. We did try to train the networks without the pre-trained weights but got poor results.
+In this work, we learned the power of using transfer learning (here specifically on ImageNet), which can easily benefit the performance of training networks. We did try to train the networks without the pre-trained weights but got poor results, the main reason for this is the small data size (total 8159 photos including test set).
 
 ## Results summary:
 
